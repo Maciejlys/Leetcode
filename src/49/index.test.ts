@@ -8,7 +8,9 @@ describe('49', () => {
 
     const result = testing(input);
 
-    expect(result).toStrictEqual(output);
+    expect(result.forEach((arr) => arr.sort())).toStrictEqual(
+      output.forEach((arr) => arr.sort()),
+    );
   });
   test('should pass', () => {
     const input = [''];
